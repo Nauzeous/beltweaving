@@ -1,15 +1,5 @@
-''' 
-This is a fun challenge i took on after watching Michael Hendriks' video
-https://youtu.be/2NKK_2v4jiE?si=TDIdW1tEbszvXW4q
-It finds the longest line you can make by belt weaving in factorio, using the new
-green belts
-keep in mind that the printed lines arent all the best solutions, and the best solution is padded 
-each number in the array represents an exit and entry underground belt
-'''
-
-
 def is_invalid_belt(arr):
-	df1=df2=df3=df4=0
+	df1=df2=df3=df4=0 
 	for item in arr:
 		df1+=2
 		df2+=2
