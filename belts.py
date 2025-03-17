@@ -45,4 +45,4 @@ for i in sols:
 print(largest*2,"tiles long")
 print("each number is an exit and entry underground belt, \
 	1 represents a yellow belt, 2 represents a red, etc.")
-print("printed solutions may include padding and dont account for the belt input and output")
+print("printed solutions dont account for belt input and output")
