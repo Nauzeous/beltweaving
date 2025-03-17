@@ -18,11 +18,12 @@ def is_invalid_belt(arr):
 			return True
 	return False
 
-global largest
 largest = 0
+sols = []
 
 def belt(arr):
 	global largest
+	global sols
 	if is_invalid_belt(arr):
 		return
 	belt(arr+[1])
@@ -31,7 +32,17 @@ def belt(arr):
 	belt(arr+[4])
 	length = len(arr)
 	if length > largest:
+		sols = []
 		largest = length
-		print(arr)
-		print(length*2,"tiles long (including padding)")
+	if length == largest:
+		sols+=[arr]
+
+
 belt([])
+
+for i in sols:
+	print(*i)
+print(largest*2,"tiles long")
+print("each number is an exit and entry underground belt, \
+	1 represents a yellow belt, 2 represents a red, etc.")
+print("printed solutions include padding and dont account for the belt input and output")
